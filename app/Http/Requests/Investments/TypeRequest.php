@@ -26,8 +26,8 @@ class TypeRequest extends FormRequest {
 
         $rules = array(
             'name' => 'required',
-            'profitability' => 'required|numeric',
-            'rate' => 'required|numeric',
+            'profitability' => 'required|numeric|min:1|max:99',
+            'rate' => 'required|numeric|min:1|max:99',
             'application_days' => 'required|numeric'            
         );        
 
